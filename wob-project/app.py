@@ -2,12 +2,9 @@ from flask import Flask
 from flask_apscheduler import APScheduler
 from elasticsearch import Elasticsearch
 from flask_cors import CORS
-from routes.data import get_data
 from routes.weather import get_weather, get_weather2
-from routes.query import get_query
-from routes.item import get_path_item
-from routes.movie import get_movie
-from routes.data_analysis import demo_graph, gender_data
+
+
 
 import json
 
