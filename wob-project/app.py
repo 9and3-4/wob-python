@@ -1,6 +1,5 @@
 from flask import Flask
 from flask_apscheduler import APScheduler
-from elasticsearch import Elasticsearch
 from flask_cors import CORS
 from routes.weather import get_weather, get_weather2
 
@@ -13,7 +12,7 @@ class Config:
 
 app = Flask(__name__)
 app.config.from_object(Config)
-CORS(app, origins=['http://localhost:8111'])
+CORS(app, origins=['*'])
 
 scheduler = APScheduler()
 scheduler.init_app(app)
