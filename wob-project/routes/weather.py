@@ -20,8 +20,8 @@ def get_weather():
 
 def get_weather2():
     print("GET 요청을 받았습니다.")
-    nx_val = request.args.get('x', default=None, type=None)
-    ny_val = request.args.get('y', default=None, type=None)
+    nx_val = request.args.get('x')
+    ny_val = request.args.get('y')
     print("X : ", nx_val)
     print("Y : ", ny_val)
     API_KEY = 'NOGPQxxLHIV58JR0gA3UDyOBxOhn3yTsYT2j0uPhRbmUa3l7M48i4GkQoAnMO%2Fyb38CrH9mqGrTvlU5bw4uyyg%3D%3D'
